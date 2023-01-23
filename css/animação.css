@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    border: none;
+}
+
+/*
+div{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(41, 31, 31);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+*/
+
+.pokebola__float{
+    width: 150px;
+    height: auto;
+    animation: float 10s ease-in-out infinite;
+    filter: drop-shadow(0 0 10px rgb(78, 190, 13));
+    transform: translateY(0) ;
+ 
+}
+
+.float:hover{
+    filter: drop-shadow( 0 0 100px rgb(20, 209, 45));
+}
+
+@keyframes float {
+    0%,100%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-50px);
+    }
+    30%,60%{
+        filter: drop-shadow(0 0 30px rgb(250, 250, 250));
+       
+    }
+   
+}
+
+
